@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="1346.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="concesionarioViews.VerClientesController">
+   <children>
+      <Label layoutX="125.0" layoutY="41.0" prefHeight="57.0" prefWidth="353.0" text="Clientes" AnchorPane.bottomAnchor="407.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="868.0" AnchorPane.topAnchor="41.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane fx:id="paneCliente1" layoutX="125.0" layoutY="121.0" onMouseClicked="#vistaCliente1" prefHeight="263.0" prefWidth="1096.0" style="-fx-background-color: lightblue; -fx-border-color: black;">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="124.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cliente1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="143.0" layoutY="14.0" text="Nombre Cliente">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="67.0" text="ID Cliente:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="115.0" text="Fecha registro:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="65.0" text="Descripción:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="115.0" text="E-mail:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="651.0" layoutY="67.0" text="Teléfono:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="descripcion" layoutX="519.0" layoutY="65.0" prefHeight="26.0" prefWidth="135.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="469.0" layoutY="115.0" prefHeight="26.0" prefWidth="117.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="idCliente" layoutX="263.0" layoutY="67.0" prefHeight="26.0" prefWidth="117.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="fechaRegistro" layoutX="290.0" layoutY="115.0" prefHeight="26.0" prefWidth="117.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="telefono" layoutX="753.0" layoutY="68.0" prefHeight="26.0" prefWidth="117.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="651.0" layoutY="115.0" text="Reparación ID:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="IdReparacion" layoutX="793.0" layoutY="115.0" prefHeight="26.0" prefWidth="117.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Line endX="80.0" layoutX="244.0" layoutY="44.0" startX="-100.0" />
+         </children>
+      </Pane>
+      <ScrollBar layoutX="1282.0" layoutY="194.0" orientation="VERTICAL" prefHeight="118.0" prefWidth="14.0" />
+   </children>
+</AnchorPane>
